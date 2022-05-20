@@ -1,0 +1,58 @@
+.promo {
+    height: 100vh;
+    background: url('../img/main_bg.jpg') center/cover no-repeat;
+    padding-top: 206px;
+    &__title {
+        max-width: 600px;
+    }
+    &__link {
+        margin-top: 25px;
+        a {
+            text-decoration: none;
+            &:hover {
+                color: #000;
+            }
+        }
+        &_portfolio,
+        &_about-me {
+            text-decoration: none;
+            background-color: $main-color;
+            color: #000;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 45px;
+            text-align: center;
+            display: inline-block;
+            height: 45px;
+            min-width: 135px;
+        }
+        &_about-me {
+            background-color: transparent;
+        }
+    }
+    &__social {
+        position: fixed;
+        top: 50%;
+        left: -5%;
+        transform: rotate(-90deg);
+        height: 25px;
+        width: 300px;
+        justify-content: space-between;
+        display: flex;
+        margin-top: 20px;
+        svg {
+            height: 98%;
+        }
+        &_text {
+            font-weight: 700;
+            font-size: 16px;
+            color: #000000;
+        }
+        &_hr {
+            align-self: center;
+            background-color: #000;
+            width: 50px;
+            height: 2px;
+        }
+    }
+}
