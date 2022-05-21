@@ -1,4 +1,7 @@
 .promo {
+    &__padding {
+        padding-left: 60px;
+    }
     height: 100vh;
     background: url('../img/main_bg.jpg') center/cover no-repeat;
     padding-top: 206px;
@@ -30,29 +33,57 @@
             background-color: transparent;
         }
     }
+    &__subtitle-circl {
+        z-index: 1;
+        position: relative;
+        @include text-circl;
+    }
     &__social {
         position: fixed;
         top: 50%;
-        left: -5%;
+        left: -9%;
         transform: rotate(-90deg);
         height: 25px;
-        width: 300px;
-        justify-content: space-between;
+        width: 370px;
+        justify-content: space-around;
         display: flex;
-        margin-top: 20px;
         svg {
-            height: 98%;
+            height: 100%;
         }
         &_text {
+            line-height: 24px;
             font-weight: 700;
-            font-size: 16px;
-            color: #000000;
+            font-size: 19px;
+            color: #000;
         }
         &_hr {
             align-self: center;
             background-color: #000;
-            width: 50px;
+            width: 70px;
             height: 2px;
+        }
+    }
+    &__hamburger {
+        &.hamburger_active {
+            display: none;
+        }
+        cursor: pointer;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #000;
+        }
+        span.long {
+            width: 36px;
         }
     }
 }
