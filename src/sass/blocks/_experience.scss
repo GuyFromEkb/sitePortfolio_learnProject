@@ -1,0 +1,103 @@
+.experience {
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include text-circl;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__wrap {
+        margin: 0 auto;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 425px 425px;
+        column-gap: 136px;
+        justify-content: center;
+        .subtitle {
+            position: relative;
+            font-weight: 700;
+            font-size: 20px;
+            padding-left: 50px;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 3.5px;
+                left: -7px;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 60%;
+            }
+        }
+    }
+    &__colum {
+        &-header {
+            position: relative;
+            padding-left: 55px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 18px;
+                left: -49px;
+                height: 1px;
+                width: 50px;
+                background-color: #000;
+            }
+        }
+        &-icon {
+            position: absolute;
+            left: 17px;
+            bottom: 0;
+            display: inline-block;
+            @include text-circl;
+            &:before {
+                top: -14px;
+                left: -16px;
+            }
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-subtitle {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-body {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    ul {
+        li {
+            margin-top: 35px;
+            position: relative;
+            list-style-type: none;
+            text-decoration: none;
+            padding-left: 50px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -40px;
+                left: 0;
+                width: 1px;
+                height: calc(100% + 40px);
+                background-color: #000;
+            }
+        }
+    }
+}
