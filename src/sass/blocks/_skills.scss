@@ -1,0 +1,85 @@
+.skills {
+    margin-top: 120px;
+    &__subtitle {
+        text-align: center;
+        position: relative;
+        @include text-circl;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+        margin-top: 6px;
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__stak-wrap {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: minmax(270px, auto);
+        gap: 13px;
+        &_item {
+            border: 1px solid #000;
+            padding: 30px 30px 25px 30px;
+        }
+        &_img {
+            max-height: 65px;
+            max-width: calc(100% - 60px);
+        }
+        &_subtitle {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        &_desrp {
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__percent-wrap {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 70px 70px;
+        column-gap: 45px;
+        row-gap: 30px;
+        &_info {
+            padding-left: 13px;
+            position: relative;
+            font-weight: 700;
+            font-size: 14px;
+            span {
+                position: absolute;
+                right: 0;
+                font-weight: 500;
+                font-size: 14px;
+            }
+            @include text-circl;
+            &::before {
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &_scale {
+            margin-top: 25px;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+            span {
+                display: block;
+                border-radius: 4px;
+                height: 100%;
+                background: $main-color;
+                width: 90%;
+            }
+        }
+    }
+}
