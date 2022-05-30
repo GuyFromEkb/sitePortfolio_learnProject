@@ -1,0 +1,89 @@
+.portfolio {
+    &__subtitle {
+        margin-top: 126px;
+        position: relative;
+        text-align: center;
+        @include text-circl;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .title {
+        text-align: center;
+        margin-top: 6px;
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__wrap {
+        margin: 0 auto;
+        max-width: 1140px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 280px 280px;
+        grid-auto-rows: 280px;
+        gap: 5px;
+    }
+    &__plans {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    &__mac {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    &__section {
+        overflow: hidden;
+        position: relative;
+        transition: 0.4s all;
+        img {
+            transition: 0.4s all;
+            z-index: 0;
+            display: block;
+            max-width: 100%;
+        }
+        &:hover {
+            img {
+                filter: brightness(40%);
+            }
+            .portfolio__link-github {
+                visibility: visible;
+                opacity: 1;
+                left: 40px;
+            }
+            .portfolio__link-figma {
+                visibility: visible;
+                opacity: 1;
+                right: 40px;
+            }
+        }
+    }
+    &__link-github,
+    &__link-figma {
+        z-index: 1;
+        position: absolute;
+        transition: 0.4s all;
+        bottom: 25px;
+        left: -40px;
+        visibility: hidden;
+        filter: brightness(70%);
+        svg {
+            height: 48px;
+            width: auto;
+        }
+        &:hover {
+            filter: none;
+        }
+    }
+    &__link-figma {
+        left: auto;
+        right: -40px;
+    }
+}
