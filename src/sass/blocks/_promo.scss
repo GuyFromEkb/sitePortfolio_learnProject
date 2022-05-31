@@ -6,7 +6,7 @@
     background: url('../img/main_bg.jpg') center/cover no-repeat;
     padding-top: 206px;
     &__title {
-        max-width: 600px;
+        max-width: 520px;
     }
     &__link {
         margin-top: 25px;
@@ -34,6 +34,7 @@
         }
     }
     &__subtitle-circl {
+        padding-left: 2px;
         z-index: 1;
         position: relative;
         @include text-circl;

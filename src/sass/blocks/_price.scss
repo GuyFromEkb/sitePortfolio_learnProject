@@ -13,6 +13,7 @@
         margin-top: 30px;
     }
     &__wrap {
+        padding: 0 50px;
         margin-top: 60px;
         display: grid;
         grid-template-columns: minmax(370px, auto) minmax(370px, auto);
@@ -21,6 +22,7 @@
         justify-content: space-between;
     }
     &__item {
+        padding: 0 20px;
         position: relative;
     }
     &__service {
@@ -34,7 +36,7 @@
             display: block;
             position: absolute;
             top: 2.5px;
-            left: -25px;
+            left: -10px;
             width: 15px;
             height: 15px;
             background-color: #ffa501;
