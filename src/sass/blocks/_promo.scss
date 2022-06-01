@@ -1,4 +1,5 @@
 .promo {
+    position: relative;
     &__padding {
         padding-left: 60px;
     }
@@ -42,8 +43,9 @@
     &__social {
         position: fixed;
         top: 50%;
-        left: -8%;
-        transform: rotate(-90deg);
+        // left: -8%;
+        // transform: rotate(-90deg);
+        transform: rotate(-90deg)translateY(-160px);
         height: 25px;
         width: 370px;
         justify-content: space-around;

@@ -22,6 +22,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: minmax(270px, auto);
+        grid-auto-rows: 270px;
         gap: 13px;
         &_item {
             border: 1px solid #000;

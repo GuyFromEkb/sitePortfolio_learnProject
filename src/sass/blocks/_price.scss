@@ -16,7 +16,7 @@
         padding: 0 50px;
         margin-top: 60px;
         display: grid;
-        grid-template-columns: minmax(370px, auto) minmax(370px, auto);
+        grid-template-columns: repeat(2, minmax(370px, auto));
         grid-template-rows: 45px 45px 45px;
         row-gap: 15px;
         justify-content: space-between;

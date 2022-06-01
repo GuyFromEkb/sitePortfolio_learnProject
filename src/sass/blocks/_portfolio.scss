@@ -19,11 +19,10 @@
     }
     &__wrap {
         margin: 0 auto;
-        max-width: 1140px;
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 280px 280px;
+        grid-template-rows: repeat(2, 280px);
         grid-auto-rows: 280px;
         gap: 5px;
     }
@@ -51,21 +50,21 @@
             height: 100%;
             width: 100%;
         }
-        &:hover {
-            img {
-                filter: brightness(40%);
-            }
-            .portfolio__link-github {
-                visibility: visible;
-                opacity: 1;
-                left: 40px;
-            }
-            .portfolio__link-figma {
-                visibility: visible;
-                opacity: 1;
-                right: 40px;
-            }
-        }
+        // &:hover {
+        //     img {
+        //         filter: brightness(40%);
+        //     }
+        //     .portfolio__link-github {
+        //         visibility: visible;
+        //         opacity: 1;
+        //         left: 40px;
+        //     }
+        //     .portfolio__link-figma {
+        //         visibility: visible;
+        //         opacity: 1;
+        //         right: 40px;
+        //     }
+        // }
     }
     &__link-github,
     &__link-figma {
