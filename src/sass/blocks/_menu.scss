@@ -29,7 +29,7 @@
     }
     &__list {
         list-style-type: none;
-        padding-left: 60px;
+        padding-left: 80px;
         padding-top: 55%;
     }
     &__link {
@@ -59,6 +59,18 @@
             &::before {
                 background-color: #FFFFFF;
             }
+        }
+    }
+    &__social {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 110px;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        a {
+            text-decoration: none;
         }
     }
     &__overlay {
